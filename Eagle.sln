@@ -5,15 +5,23 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Eagle.App", "Eagle.App", "{88CDB295-231B-473D-BE6E-C42CB23A2784}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.Core", "Eagle.Core\Eagle.Core.csproj", "{D9A52595-0EA1-4E65-BAFF-CFF7B9844CBC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eagle.Core", "Eagle.Core\Eagle.Core.csproj", "{D9A52595-0EA1-4E65-BAFF-CFF7B9844CBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.WebApi", "Eagle.WebApi\Eagle.WebApi.csproj", "{5666D6C8-2197-4782-9A32-9E97EFDAC8BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eagle.WebApi", "Eagle.WebApi\Eagle.WebApi.csproj", "{5666D6C8-2197-4782-9A32-9E97EFDAC8BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.Domain", "Eagle.Domain\Eagle.Domain.csproj", "{036BEF5A-10DE-4F00-92C0-FEC797941066}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eagle.Domain", "Eagle.Domain\Eagle.Domain.csproj", "{036BEF5A-10DE-4F00-92C0-FEC797941066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.Config", "Eagle.Config\Eagle.Config.csproj", "{127AD027-1ACD-4F3E-B05D-1E637BFAC1B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eagle.Config", "Eagle.Config\Eagle.Config.csproj", "{127AD027-1ACD-4F3E-B05D-1E637BFAC1B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.Logic", "Eagle.Logic\Eagle.Logic.csproj", "{9F8CACCF-C829-4A5E-82C1-81A2F3DF78CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eagle.Logic", "Eagle.Logic\Eagle.Logic.csproj", "{9F8CACCF-C829-4A5E-82C1-81A2F3DF78CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Eagle.GameLogic", "Eagle.GameLogic", "{AA458DDF-7CB6-47E2-8A5D-BDC75101A7B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.TicTacToe", "Eagle.TicTacToe\Eagle.TicTacToe.csproj", "{FA82ACFD-C2F1-4B0E-95F4-4CF7BAF6BDAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B30A819E-54CE-48F1-9A12-A55CCF5FDC9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTicTacToe", "TestTicTacToe\TestTicTacToe.csproj", "{C1FC3F6C-59C3-4291-A20D-FB935D83BEBC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,12 +49,22 @@ Global
 		{9F8CACCF-C829-4A5E-82C1-81A2F3DF78CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F8CACCF-C829-4A5E-82C1-81A2F3DF78CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F8CACCF-C829-4A5E-82C1-81A2F3DF78CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA82ACFD-C2F1-4B0E-95F4-4CF7BAF6BDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA82ACFD-C2F1-4B0E-95F4-4CF7BAF6BDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA82ACFD-C2F1-4B0E-95F4-4CF7BAF6BDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA82ACFD-C2F1-4B0E-95F4-4CF7BAF6BDAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1FC3F6C-59C3-4291-A20D-FB935D83BEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1FC3F6C-59C3-4291-A20D-FB935D83BEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1FC3F6C-59C3-4291-A20D-FB935D83BEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1FC3F6C-59C3-4291-A20D-FB935D83BEBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{5666D6C8-2197-4782-9A32-9E97EFDAC8BF} = {88CDB295-231B-473D-BE6E-C42CB23A2784}
+		{FA82ACFD-C2F1-4B0E-95F4-4CF7BAF6BDAB} = {AA458DDF-7CB6-47E2-8A5D-BDC75101A7B9}
+		{C1FC3F6C-59C3-4291-A20D-FB935D83BEBC} = {B30A819E-54CE-48F1-9A12-A55CCF5FDC9E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {23A3B0BC-CF5D-4DBA-A917-10A36049CAFB}
