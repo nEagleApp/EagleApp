@@ -4,17 +4,17 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Eagle.Domain.DataAccess.EntityFramework.Configration.Raw
 {
-    public class CoinConfig : BaseConfig<CoinDM>
+    internal class UserTokenConfig : BaseConfig<UserTokenDM>
     {
-        public override void Configure(EntityTypeBuilder<CoinDM> builder)
+        public override void Configure(EntityTypeBuilder<UserTokenDM> builder)
         {
             base.Configure(builder);
 
-            builder.ToTable("Coins");
+            builder.ToTable("UserTokens");
 
             builder.HasOne(x => x.User)
-                .WithOne(x => x.Coin)
-                .HasForeignKey<CoinDM>(x => x.UserId);
+                .WithMany(x => x.UserTokens)
+                .HasForeignKey(x => x.UserId);
         }
     }
 }

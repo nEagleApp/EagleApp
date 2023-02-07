@@ -10,7 +10,7 @@ namespace Eagle.Domain.DataAccess.EntityFramework.Configration.Raw
         {
             base.Configure(builder);
 
-            builder.ToTable("User");
+            builder.ToTable("Users");
 
             builder.HasMany(x => x.CoinRecords)
                 .WithOne(x => x.User)
@@ -19,6 +19,10 @@ namespace Eagle.Domain.DataAccess.EntityFramework.Configration.Raw
             builder.HasOne(x => x.Coin)
                 .WithOne(x => x.User)
                 .HasForeignKey<UserDM>(x => x.Id);
+
+            builder.HasMany(x => x.UserTokens)
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.UserId);
         }
     }
 }

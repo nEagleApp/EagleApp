@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\Eagle.Config\Eagle.Config.csproj" />
+    <ProjectReference Include="..\Eagle.Core\Eagle.Core.csproj" />
+    <ProjectReference Include="..\Eagle.Logic\Eagle.Logic.csproj" />
   </ItemGroup>
 
 </Project>

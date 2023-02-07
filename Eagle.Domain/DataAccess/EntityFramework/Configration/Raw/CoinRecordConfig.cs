@@ -10,7 +10,7 @@ namespace Eagle.Domain.DataAccess.EntityFramework.Configration.Raw
         {
             base.Configure(builder);
 
-            builder.ToTable("CoinRecord");
+            builder.ToTable("CoinRecords");
 
             builder.HasOne(x => x.User)
                 .WithMany(x => x.CoinRecords)

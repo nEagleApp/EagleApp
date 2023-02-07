@@ -1,4 +1,5 @@
 ﻿using Eagle.Config.Models;
+using Eagle.Core.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Newtonsoft.Json;
 using System.Net;
