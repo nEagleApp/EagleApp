@@ -6,14 +6,12 @@ using System.Net;
 
 namespace Eagle.Config.Middleware
 {
-    public class GlobalErrorHandlingMiddleware
+    public class GlobalErrorHandlingMiddleware : BaseMiddleware
     {
-        private readonly RequestDelegate _next;
-        public GlobalErrorHandlingMiddleware(RequestDelegate next)
+        public GlobalErrorHandlingMiddleware(RequestDelegate next) : base(next)
         {
-            _next = next;
-        }
-        public async Task Invoke(HttpContext context)
+        } 
+        public override async Task Invoke(HttpContext context)
         {
             try
             {

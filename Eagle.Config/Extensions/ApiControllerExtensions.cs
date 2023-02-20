@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Eagle.Config.Extensions
 {
-    public static class ApiControllerExtension
+    public static class ApiControllerExtensions
     {
         public static IActionResult AsSuccessResult(
             this ControllerBase controller,

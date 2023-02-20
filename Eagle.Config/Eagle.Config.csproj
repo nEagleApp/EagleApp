@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Eagle.Core\Eagle.Core.csproj" />
+    <ProjectReference Include="..\Eagle.Logic\Eagle.Logic.csproj" />
   </ItemGroup>
 
 </Project>
