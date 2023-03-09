@@ -17,7 +17,7 @@ namespace Eagle.ButtonMoney.Settings
             }
         }
 
-        public BaseViewModels<ContentPage> CurrentPage
+        public BaseViewModels CurrentPage
         {
             get
             {
@@ -33,30 +33,24 @@ namespace Eagle.ButtonMoney.Settings
         }
 
 
-        private Stack<BaseViewModels<ContentPage>> _pages = new Stack<BaseViewModels<ContentPage>>();
+        private Stack<BaseViewModels> _pages = new Stack<BaseViewModels>();
         private Stack<NavigationPage> _navigations = new Stack<NavigationPage>();
 
-        public async Task OpenApp<TViewModel>() where TViewModel : BaseViewModels<ContentPage>
+        public async Task OpenApp(BaseViewModels viewModel)
         {
             var navigation = CreateNavigationView();
-            var viewModel = CreateViewModel<TViewModel>();
-            await navigation.PushAsync(viewModel.View);
+            await navigation.PushAsync(viewModel.ContentPage);
             _pages.Push(viewModel);
 
             App.Current.MainPage = navigation;
         }
 
-        public void ChangePage<TViewModel>(bool isNaviagte = false) where TViewModel: BaseViewModels<ContentPage>
+        public void ChangePage<TViewModel>(bool isNaviagte = false) where TViewModel: BaseViewModels
         {
 
         }
 
 
-        private TViewModel CreateViewModel<TViewModel>()
-        {
-            var instance = (TViewModel)Activator.CreateInstance(typeof(TViewModel));
-            return instance;
-        }
         private NavigationPage CreateNavigationView()
         {
             NavigationPage navigation = new NavigationPage();

@@ -10,7 +10,7 @@ namespace Eagle.ButtonMoney
         {
             InitializeComponent();
 
-            PageStack.Instance.OpenApp<LoginViewModel>().ConfigureAwait(false).GetAwaiter();
+            PageStack.Instance.OpenApp(new LoginViewModel()).ConfigureAwait(false).GetAwaiter();
         }
     }
 }

@@ -23,7 +23,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{B30A819E-5
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTicTacToe", "TestTicTacToe\TestTicTacToe.csproj", "{C1FC3F6C-59C3-4291-A20D-FB935D83BEBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle.ButtonMoney", "Eagle.ButtonMoney\Eagle.ButtonMoney.csproj", "{EF9EEEA9-09B7-4C54-8D8F-4C6E2DE4928F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Eagle.ButtonMoney", "Eagle.ButtonMoney\Eagle.ButtonMoney.csproj", "{EF9EEEA9-09B7-4C54-8D8F-4C6E2DE4928F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

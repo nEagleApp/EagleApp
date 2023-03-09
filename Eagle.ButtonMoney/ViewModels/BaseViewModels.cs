@@ -2,15 +2,28 @@
 
 namespace Eagle.ButtonMoney.ViewModels
 {
-    public abstract class BaseViewModels<TView> : INotifyPropertyChanged where TView : ContentPage
+    public abstract class BaseViewModels: INotifyPropertyChanged
     {
-        public BaseViewModels(TView view)
+        private ContentPage _view;
+        public ContentPage ContentPage
         {
-            View = view;
-            View.BindingContext = this;
+            get
+            {
+                return _view;
+            }
+        }
+        public BaseViewModels(ContentPage view)
+        {
+            _view = view;
+            _view.BindingContext = this;
         }
 
-        public TView View { get; set; }
+        public TView GetView<TView>() where TView: ContentPage
+        {
+            return (TView)_view;
+        }
+
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         public void OnPropertyChanged(string propertyName)

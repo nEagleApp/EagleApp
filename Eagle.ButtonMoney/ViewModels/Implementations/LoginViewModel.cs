@@ -2,7 +2,7 @@
 
 namespace Eagle.ButtonMoney.ViewModels.Implementations
 {
-    public class LoginViewModel : BaseViewModels<LoginPage>
+    public class LoginViewModel : BaseViewModels
     {
         public LoginViewModel() : base(new LoginPage())
         {

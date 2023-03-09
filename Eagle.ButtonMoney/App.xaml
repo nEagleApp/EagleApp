@@ -9,6 +9,8 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+
+            <StyleSheet Source="/Resources/Styles/Css/standart.css" />
         </ResourceDictionary>
     </Application.Resources>
 </Application>
