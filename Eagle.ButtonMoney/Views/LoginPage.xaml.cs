@@ -1,4 +1,4 @@
-namespace Eagle.ButtonMoney.Views;
+﻿namespace Eagle.ButtonMoney.Views;
 
 public partial class LoginPage : ContentPage
 {
@@ -6,4 +6,13 @@ public partial class LoginPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    private async void OnLoginClicked(object sender, EventArgs e)
+    {
+        // Giriş işlemini burada gerçekleştirin
+    }
+
+    private async void OnSignUpClicked(object sender, EventArgs e)
+    {
+        // Kayıt sayfasına yönlendirmeyi burada gerçekleştirin
+    }
 }
